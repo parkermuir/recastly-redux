@@ -6,7 +6,7 @@ import rootReducer from './../reducers/main.js';
 const store = createStore(
   rootReducer,
   applyMiddleware (
-    thunkMiddleware
+    thunk
   )
 );
 
