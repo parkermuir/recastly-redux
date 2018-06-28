@@ -10,9 +10,10 @@ var handleVideoSearch = (q) => {
     searchYouTube({
       key: YOUTUBE_API_KEY,
       query: q,
-      max: 5
+      max: 10
     }, function (data) {
       dispatch(changeVideoList(data));
+      dispatch(changeVideo(data[0]));
     });
   };
 };

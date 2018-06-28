@@ -5,7 +5,7 @@ import changeVideo from '../actions/currentVideo';
 var currentVideoReducer = (state = null, action) => {
   switch (action.type) {
   case 'CHANGE_VIDEO':
-    return Object.assign({}, state, action.video);
+    return Object.assign({}, action.video); //return action.video
   default:
     return state;
   }
