@@ -11,6 +11,8 @@ var handleVideoSearch = (q) => {
       key: YOUTUBE_API_KEY,
       query: q,
       max: 5
+    }, function (data) {
+      dispatch(changeVideoList(data));
     });
   };
 };

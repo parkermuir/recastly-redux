@@ -19,5 +19,4 @@ var SearchContainer = connect(
   mapDispatchToProps
 )(Search);
 
-
 export default SearchContainer;
