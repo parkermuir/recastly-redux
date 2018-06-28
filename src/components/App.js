@@ -22,9 +22,7 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    this.getYouTubeVideos('react tutorials');
-    // console.log('component did mount');
-    // handleVideoSearch('react tutorials');
+    this.getYouTubeVideos('javascripto');
   }
 
   handleVideoListEntryTitleClick(video) {
@@ -37,9 +35,10 @@ export default class App extends React.Component {
       query: query
     };
 
-    this.props.searchYouTube(options, (videos) => (
-      store.dispatch(changeVideoList(videos)))
-    );
+    this.props.searchYouTube(options, (videos) => {
+      store.dispatch(changeVideoList(videos));
+      store.dispatch(changeVideo(videos[0]));
+    });
   }
 
   //TODO: swap out the React components below for the container components
