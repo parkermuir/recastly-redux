@@ -47,6 +47,7 @@ export default class App extends React.Component {
     return (
       <div>
         <Nav handleSearchInputChange={this.getYouTubeVideos.bind(this)}/>
+        <Search />
         <div className="row">
           <div className="col-md-7">
             <VideoPlayer video={this.state.currentVideo}/>
