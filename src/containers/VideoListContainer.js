@@ -10,7 +10,7 @@ const mapStateToProps = (store) => ({
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  handleVideoListEntryTitleClick: (video) => dispatch(changeVideo(video)) 
+  handleVideoListEntryTitleClick: (video) => dispatch(changeVideo(video))
 });
 
 var VideoListContainer = connect(

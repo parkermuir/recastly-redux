@@ -17,5 +17,4 @@ var VideoPlayerContainer = connect(
   // mapDispatchToProps
 )(VideoPlayer);
 
-
 export default VideoPlayerContainer;
